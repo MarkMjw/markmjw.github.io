@@ -1,1 +1,5 @@
-logo: "/assets/images/ic.png"
+theme: jekyll-theme-minimal
+title: Phonin Layout Template
+description: The Phonin Layout Template
+show_downloads: false
+logo: https://phonin.github.io/Branding/icons/small.svg
