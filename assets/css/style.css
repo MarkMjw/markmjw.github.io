@@ -1,68 +1,128 @@
+/* _base.scss */
+
 /* 设置页面的默认字体和背景颜色 */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-  }
-  
-  /* 设置标题的样式 */
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: bold;
-    margin-top: 1em;
-    margin-bottom: 0.5em;
-  }
-  
-  /* 设置链接的样式 */
-  a {
-    color: #0366d6;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  /* 设置代码块的样式 */
-  pre {
-    background-color: #f8f8f8;
-    border: 1px solid #ddd;
-    font-size: 14px;
-    line-height: 1.45;
-    overflow: auto;
-    padding: 16px;
-  }
-  
-  /* 设置代码的样式 */
-  code {
-    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    font-size: 14px;
-  }
-  
-  /* 设置表格的样式 */
-  table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-  }
-  
-  th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-  }
-  
-  th {
-    background-color: #f5f5f5;
-    font-weight: bold;
-  }
-  
-  /* 设置列表的样式 */
-  ul, ol {
-    margin-top: 0;
-    margin-bottom: 1em;
-  }
-  
-  li {
-    margin-bottom: 0.5em;
-    padding-left: 1em;
-    text-indent: -1em;
-  }
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+}
+
+/* 设置标题的样式 */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+/* 设置链接的样式 */
+a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 设置代码块的样式 */
+pre {
+  background-color: #f6f8fa;
+  border: 1px solid #e1e4e8;
+  border-radius: 3px;
+  font-size: 85%;
+  line-height: 1.45;
+  overflow: auto;
+  padding: 16px;
+}
+
+/* 设置代码的样式 */
+code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 85%;
+}
+
+/* 设置表格的样式 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #dfe2e5;
+  padding: 6px 13px;
+  text-align: left;
+}
+
+th {
+  background-color: #f6f8fa;
+  font-weight: 600;
+}
+
+/* 设置列表的样式 */
+ul, ol {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+/* _layout.scss */
+
+/* 设置页脚的样式 */
+footer {
+  margin-top: 4em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  border-top: 1px solid #e1e4e8;
+  font-size: 85%;
+  color: #6a737d;
+}
+
+/* 设置导航栏的样式 */
+nav {
+  margin-bottom: 2em;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+nav a {
+  color: #6a737d;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #1e90ff;
+}
+
+/* _syntax-highlighting.scss */
+
+/* 设置代码高亮的样式 */
+.highlight {
+  background-color: #f6f8fa;
+  border: 1px solid #e1e4e8;
+  border-radius: 3px;
+  font-size: 85%;
+  line-height: 1.45;
+  overflow: auto;
+  padding: 16px;
+}
+
+.highlight pre {
+  margin-bottom: 0;
+  margin-top: 0;
+}
