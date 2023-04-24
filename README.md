@@ -1,4 +1,3 @@
-# markmjw.github.io
-Personal homepage.
+### Homepage
 
-[ReaderX隐私政策](readerx/privacy.md)
+* [ReaderX隐私政策](readerx/privacy.md)
