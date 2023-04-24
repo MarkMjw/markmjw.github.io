@@ -1,7 +1,41 @@
-<body>
-    {{ content }}
-</body>
-
-<footer>
-  <p>&copy; {{ site.author }} {{ site.time | date: '%Y' }}</p>
-</footer>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title | default: site.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    {% seo %}
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>{{ site.title }}</h1>
+        <nav>
+          <ul>
+            {% for page in site.pages %}
+            <li><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      {{ content }}
+    </div>
+    <footer>
+      <div class="container">
+        <p>&copy; {{ site.author }} {{ site.time | date: '%Y' }}</p>
+      </div>
+    </footer>
+    {% if site.google_analytics %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '{{ site.google_analytics }}');
+    </script>
+    {% endif %}
+  </body>
+</html>
