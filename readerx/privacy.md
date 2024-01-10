@@ -6,8 +6,8 @@
 
 **ReaderX** 不会收集您的隐私信息，仅会查询以下与您个人信息无关的内容：
 
-* 当前手机型号名称、手机分辨率、Android 系统版本号、Android 系统API版本号、设备信息（MAC/Android ID/IDFA/OAID/OpenUDID/GUID）、位置信息、网络信息、系统支持的ABI平台名称（如 `armeabi-v7a` , `arm64-v8a` ）：这些数据将会随着程序发生闪退时自动上报，以帮助我们了解应用版本的 bug 以及相关机型，便于开发者复现和解决问题，提高软件的稳定性。我们不会且无法通过这些信息定位到具体用户或手机。
-* 错误日志：由 Android 系统在程序闪退时自动产生的相关代码堆栈信息，我们会自动将其通过网络上报到友盟同欣（北京）科技有限公司 [UMeng](https://www.umeng.com/) 或者微软 [AppCenter](https://appcenter.ms) 。
+* 当前手机型号名称、手机分辨率、 Android 系统版本号、Android 系统API版本号、系统支持的ABI平台名称（如 `armeabi-v7a` , `arm64-v8a` ）：这些数据将会随着程序发生闪退时自动上报，以帮助我们了解应用版本的 bug 以及相关机型，便于开发者复现和解决问题，提高软件的稳定性。我们不会且无法通过这些信息定位到具体用户或手机。
+* 错误日志：由 Android 系统在程序闪退时自动产生的相关代码堆栈信息，我们会自动将其通过网络上报到腾讯 [Bugly](https://bugly.qq.com/v2) 或者微软 [AppCenter](https://appcenter.ms) 。
 
 #### 申请的权限
 
@@ -20,7 +20,7 @@
 
 #### 第三方SDK
 
-* 友盟 ：用于统计崩溃日志，[隐私政策](https://www.umeng.com/page/policy)
+* 腾讯 Bugly ：用于统计崩溃日志，[隐私政策](https://privacy.qq.com/document/preview/fc748b3d96224fdb825ea79e132c1a56)
 
 #### 免责声明
 
